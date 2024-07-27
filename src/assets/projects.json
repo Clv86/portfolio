@@ -1,20 +1,28 @@
 {
   "project": [
     {
-      "name": "aloha",
-      "description": "blabla"
+      "name": "Aloha",
+      "description": "En tant qu'utilisateur de sites de prévisions de surf et développeur débutant, j'ai voulu créer un site minimaliste dédié à des spots spécifiques de la côte ouest française, en croisant différentes bases de données météorologiques. Ce projet était parfait pour pratiquer React, utiliser des APIs, et en apprendre plus sur le fonctionnement des prévisions météorologiques.",
+      "type": "site",
+      "link": "https://aloha-surf.vercel.app/"
     },
     {
-      "name": "alohapi",
-      "description": "blabli"
+      "name": "AlohAPI",
+      "description": "AlohAPI est une API météorologique dédiée aux conditions de surf de la côte Ouest française. Cet outil a pour objectif d'automatisé la recherche de data auprès de bases de données externes, et de faciliter sur le long terme le croisement des données.",
+      "type": "serveur",
+      "link": "https://github.com/Clv86/alohAPI"
     },
     {
-      "name": "specto",
-      "description": "blablu"
+      "name": "Specto Média",
+      "description": "Specto est un média en ligne sur l'exil et les droits humains qui a pour mission d'informer, de sensibiliser et de donner des clés sur des faits de société qui relèvent de l'intérêt général. J'ai rejoint Specto en tant qu'intégrateur web, puis j'ai aussi été en charge de l'infrastructure à distance du site web.",
+      "type": "site",
+      "link": "https://spectomedia.org/"
     },
     {
       "name": "intro",
-      "description": "blaaaaaaa"
+      "description": "Cliquez sur les titres de projets à gauche pour avoir plus d'infos à leurs sujets !",
+      "type": "intro",
+      "link": ""
     }
   ]
 }

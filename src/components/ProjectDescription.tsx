@@ -4,6 +4,8 @@ function ProjectDescription({ name }: { name: string }) {
   type Project = {
     name: string
     description: string
+    type: string
+    link: string
   }
   const project: Project = projectList.project.find((p) => p.name === name)
   if (!project) {
@@ -11,8 +13,15 @@ function ProjectDescription({ name }: { name: string }) {
   }
   return (
     <div>
-      <h3>{project.name}</h3>
+      {project.name === 'intro' ? '' : <h3>{project.name}</h3>}
       <p>{project.description}</p>
+      {project.type === 'intro' ? (
+        ''
+      ) : project.type === 'site' ? (
+        <a href={project.link}>Accedez au site</a>
+      ) : (
+        <a href={project.link}>Accedez au code</a>
+      )}
     </div>
   )
 }

@@ -16,6 +16,15 @@
     'specto presentation';
   grid-row-gap: 0;
   grid-column-gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1009px) {
+    grid-template-areas:
+      'aloha alohapi specto'
+      'presentation presentation presentation';
+    grid-row-gap: 1.5em;
+    grid-column-gap: 0.5em;
+  }
 }
 .main-section div {
   background: #ffffff56;
@@ -23,6 +32,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
   border-radius: 5px;
   padding: 16px;
+  min-height: 15dvh;
 }
 .aloha {
   grid-area: aloha;
@@ -40,11 +50,9 @@
   background: none;
   border: none;
   font: inherit;
-  color: inherit;
-  display: inline-block;
   margin: 0;
-  width: 100px;
-  height: 24px;
+  width: 136px;
+  height: 45px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -53,7 +61,6 @@
   color: black;
   border-radius: 5px;
   z-index: 1;
-  margin-top: 0;
 }
 .project-name::before,
 .project-name::after {

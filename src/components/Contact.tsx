@@ -1,10 +1,47 @@
 import '../style/contact.css'
 import { Element } from 'react-scroll'
-import github from '../assets/sociale.png'
-import linkedin from '../assets/reseaux-sociaux.png'
-import mail from '../assets/enveloppe.png'
+import github from '../assets/beigeGithub.png'
+import linkedin from '../assets/beigeLinkedin.png'
+import mail from '../assets/beigeMail.png'
+// import { useState } from 'react'
+// import emailjs from '@emailjs/browser'
 
 function Contact() {
+  // const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
+  // const [stateMessage, setStateMessage] = useState<string | null>(null)
+
+  // const sendEmail: React.FC = (e) => {
+  //   e.persist()
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+
+  //   emailjs
+  //     .sendForm(
+  //       process.env.REACT_APP_SERVICE_ID,
+  //       process.env.REACT_APP_TEMPLATE_ID,
+  //       e.target,
+  //       process.env.REACT_APP_PUBLIC_KEY,
+  //     )
+  //     .then(
+  //       (result) => {
+  //         setStateMessage('Message sent!')
+  //         setIsSubmitting(false)
+  //         setTimeout(() => {
+  //           setStateMessage(null)
+  //         }, 5000) // hide message after 5 seconds
+  //       },
+  //       (error) => {
+  //         setStateMessage('Something went wrong, please try again later')
+  //         setIsSubmitting(false)
+  //         setTimeout(() => {
+  //           setStateMessage(null)
+  //         }, 5000) // hide message after 5 seconds
+  //       },
+  //     )
+
+  //   // Clears the form after sending the email
+  //   e.target.reset()
+  // }
   return (
     <div
       className="contact blue
@@ -19,28 +56,34 @@ function Contact() {
           </div>
           <form>
             <input
-              name="name"
+              name="user_name"
               type="text"
               className="feedback-input"
               placeholder="Name"
             />
             <input
-              name="email"
+              name="user_email"
               type="text"
               className="feedback-input"
               placeholder="Email"
             />
             <textarea
-              name="text"
+              name="message"
               className="feedback-input"
               placeholder="Comment"
             ></textarea>
-            <input type="submit" value="SUBMIT" />
+            <input type="submit" value="Send" />
           </form>
           <div className="navIcon">
-            <img src={github} />
-            <img src={linkedin} />
-            <img src={mail} />
+            <a href="https://github.com/Clv86">
+              <img src={github} className="github" />
+            </a>
+            <a href="https://www.linkedin.com/in/charles-louis-velieu">
+              <img src={linkedin} />
+            </a>
+            <a href="mailto:charleslouis.velieu@gmail.com">
+              <img src={mail} />
+            </a>
           </div>
         </div>
       </Element>

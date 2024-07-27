@@ -16,21 +16,21 @@ function Projects() {
         <div className="main-section">
           <button
             className="aloha project-name"
-            value="aloha"
+            value="Aloha"
             onClick={(e) => handleClick((e.target as HTMLButtonElement).value)}
           >
             Aloha
           </button>
           <button
             className="alohapi project-name"
-            value="specto"
+            value="Specto Média"
             onClick={(e) => handleClick((e.target as HTMLButtonElement).value)}
           >
-            Specto
+            Specto Média
           </button>
           <button
             className="specto project-name"
-            value="alohapi"
+            value="AlohAPI"
             onClick={(e) => handleClick((e.target as HTMLButtonElement).value)}
           >
             AlohAPI

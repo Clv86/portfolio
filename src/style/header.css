@@ -1,12 +1,15 @@
 .hero {
-  height: 80dvh;
+  height: 90dvh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-height: 400px;
-  padding: 100px 5vw;
+  padding: 0 5vw 100px 5vw;
   color: var(--aliblue);
+  /* @media (max-width: 688px) {
+    justify-content: start;
+  } */
   /*background: rgb(58, 180, 155);
   background: radial-gradient(
     circle,
@@ -14,8 +17,19 @@
     rgba(246, 44, 44, 0.19789922805059523) 50%,
     rgba(252, 252, 69, 1) 100%*/
 }
+.hero h1 {
+  margin-bottom: 0;
+}
+.hero h2 {
+  margin-top: 0;
+}
 .title {
   align-self: flex-start;
+}
+.header-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 @keyframes gradient {
   0% {
@@ -30,21 +44,31 @@
 }
 .navbar {
   position: sticky;
-
   width: fit-content;
   display: flex;
 }
 .hero-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
 }
-/*.social {
-  height: 4.2em;
-  width: max-content;
+.social {
+  height: 5dvh;
   display: flex;
   flex-direction: row;
+  width: 148px;
+  align-self: center;
+  /* @media (max-width: 688px) {
+    display: none;
+  } */
 }
 .social img {
-}*/
+  height: 5dvh;
+}
+.social .github {
+  height: 4.4dvh;
+}
 .custom-shape-divider-bottom-1722031858 {
   position: absolute;
   bottom: 0;
@@ -81,10 +105,12 @@ img {
 }
 .hero-content li {
   list-style-type: none;
-  font-size: 1.3em;
+
+  font-size: clamp(16px, 3dvw, 36px);
   font-weight: 900;
   margin: 1.2em 0;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .hero-content li:hover {
   text-decoration: underline;

@@ -1,24 +1,32 @@
 import '../style/header.css'
 import { Link } from 'react-scroll'
 import img from '../assets/webDev3.png'
-// import github from '../assets/sociale.png'
-// import linkedin from '../assets/reseaux-sociaux.png'
-// import mail from '../assets/enveloppe.png'
+import github from '../assets/blueGithub.png'
+import linkedin from '../assets/blueLinkedin.png'
+import mail from '../assets/blueMail.png'
 
 function Header() {
   return (
     <div className="hero white">
-      {/* <div className="hero-header"> */}
-      <div className="title">
-        <h1>Charles-Louis Velieu</h1>
-        <h2>Apprenti développeur Full Stack</h2>
-      </div>
-      {/* <div className="social">
-          <img src={github} />
-          <img src={linkedin} />
-          <img src={mail} />
+      {/* <div className="header-subtitle"> */}
+      <div className="hero-header">
+        <div className="title">
+          <h1>Charles-Louis Velieu</h1>
+          <h2>Apprenti développeur Full Stack</h2>
         </div>
-      </div> */}
+        <div className="social">
+          <a href="https://github.com/Clv86">
+            <img src={github} className="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/charles-louis-velieu">
+            <img src={linkedin} />
+          </a>
+          <a href="mailto:charleslouis.velieu@gmail.com">
+            <img src={mail} />
+          </a>
+        </div>
+      </div>
+      {/* </div> */}
       <div className="hero-content">
         <div className="navbar">
           <ul>

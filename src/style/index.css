@@ -12,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  --aliblue: #004aad;
-  --alibeige: #e4e2dd;
+  --aliblue: rgb(0, 74, 173);
+  --alibeige: rgb(228, 226, 221);
 
   /*overflow: auto;
   background: linear-gradient(
@@ -28,14 +28,20 @@ body {
   background-attachment: fixed;
   align-items: center;*/
 }
-p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
-}
 h1 {
   font-family: 'Chewy', system-ui;
-  font-size: 4.2em;
+  font-size: 5.9dvw;
   line-height: 1.1;
+}
+h2 {
+  font-size: 2dvw;
+}
+h3 {
+  font-size: 2dvw;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(12px, 2vmin, 16);
 }
 .blue {
   background: #004aad;
