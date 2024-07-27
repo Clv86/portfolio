@@ -1,0 +1,20 @@
+{
+  "project": [
+    {
+      "name": "aloha",
+      "description": "blabla"
+    },
+    {
+      "name": "alohapi",
+      "description": "blabli"
+    },
+    {
+      "name": "specto",
+      "description": "blablu"
+    },
+    {
+      "name": "intro",
+      "description": "blaaaaaaa"
+    }
+  ]
+}
