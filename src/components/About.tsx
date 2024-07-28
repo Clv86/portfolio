@@ -44,7 +44,7 @@ function About() {
           <div className="card infrastructure">
             <h3>Infrastructure</h3>
             <ul>
-              <li>serveur Debian</li>
+              <li>Serveur Linux</li>
               <li>Git, Jest, React-test-library</li>
               <li>Apache, Nginx, Vercel</li>
             </ul>
