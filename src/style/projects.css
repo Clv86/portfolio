@@ -23,6 +23,11 @@
     padding: 100px 10vw;
   }
 }
+@media (max-width: 670px) {
+  .projects {
+    padding: 50px 10vw 100px 10vw;
+  }
+}
 @media (max-width: 1009px) {
   .main-section {
     grid-template-areas:
