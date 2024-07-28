@@ -23,6 +23,13 @@
 .navIcon .github {
   height: 4.4dvh;
 }
+.send-message {
+  width: 100%;
+  text-align: center;
+  padding: 13px;
+  margin-bottom: 15px;
+  font-size: var(--h4);
+}
 .custom-shape-divider-bottom-1722034959 {
   position: absolute;
   bottom: 0;
@@ -61,7 +68,7 @@
 }
 
 .feedback-input:focus {
-  border: 2px solid #cc4949;
+  border: 2px solid #f6d300;
 }
 
 textarea {

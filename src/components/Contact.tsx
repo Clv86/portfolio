@@ -3,45 +3,34 @@ import { Element } from 'react-scroll'
 import github from '../assets/beigeGithub.png'
 import linkedin from '../assets/beigeLinkedin.png'
 import mail from '../assets/beigeMail.png'
-// import { useState } from 'react'
-// import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
+import { useRef, useState } from 'react'
 
 function Contact() {
-  // const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
-  // const [stateMessage, setStateMessage] = useState<string | null>(null)
+  const form = useRef<HTMLFormElement>(null)
+  const [isSent, setSend] = useState<boolean>(false)
 
-  // const sendEmail: React.FC = (e) => {
-  //   e.persist()
-  //   e.preventDefault()
-  //   setIsSubmitting(true)
-
-  //   emailjs
-  //     .sendForm(
-  //       process.env.REACT_APP_SERVICE_ID,
-  //       process.env.REACT_APP_TEMPLATE_ID,
-  //       e.target,
-  //       process.env.REACT_APP_PUBLIC_KEY,
-  //     )
-  //     .then(
-  //       (result) => {
-  //         setStateMessage('Message sent!')
-  //         setIsSubmitting(false)
-  //         setTimeout(() => {
-  //           setStateMessage(null)
-  //         }, 5000) // hide message after 5 seconds
-  //       },
-  //       (error) => {
-  //         setStateMessage('Something went wrong, please try again later')
-  //         setIsSubmitting(false)
-  //         setTimeout(() => {
-  //           setStateMessage(null)
-  //         }, 5000) // hide message after 5 seconds
-  //       },
-  //     )
-
-  //   // Clears the form after sending the email
-  //   e.target.reset()
-  // }
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
+    if (form.current) {
+      e.preventDefault()
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_APP_SERVICE_ID as string,
+          import.meta.env.VITE_APP_TEMPLATE_ID as string,
+          form.current,
+          import.meta.env.VITE_APP_PUBLIC_KEY as string,
+        )
+        .then(
+          () => {
+            setSend(true)
+            form.current?.reset()
+          },
+          (error) => {
+            console.log(error.text)
+          },
+        )
+    }
+  }
   return (
     <div
       className="contact blue
@@ -51,28 +40,34 @@ function Contact() {
         <div className="contactBloc">
           <h2>Contact</h2>
           <div className="description">
-            Vous pouvez me contacter par mail ci-dessous ou sur mes différents
-            réseaux :
+            <p>
+              Vous pouvez me contacter par mail ci-dessous ou sur mes différents
+              réseaux :
+            </p>
           </div>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               name="user_name"
               type="text"
               className="feedback-input"
               placeholder="Name"
+              onClick={() => setSend(false)}
             />
             <input
               name="user_email"
               type="text"
               className="feedback-input"
               placeholder="Email"
+              onClick={() => setSend(false)}
             />
             <textarea
               name="message"
               className="feedback-input"
-              placeholder="Comment"
+              placeholder="Message"
+              onClick={() => setSend(false)}
             ></textarea>
-            <input type="submit" value="Send" />
+            {isSent ? <div className="send-message">Message envoyé !</div> : ''}
+            <input type="submit" value="Submit" id="input-submit" />
           </form>
           <div className="navIcon">
             <a href="https://github.com/Clv86">
