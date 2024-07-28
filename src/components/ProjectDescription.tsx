@@ -36,13 +36,11 @@ function ProjectDescription({ name, backToIntro }: ProjectDescriptionProps) {
           ''
         ) : project.type === 'site' ? (
           <button className="bottom-button">
-            <a href={project.link}>Accedez au site</a>
+            <a href={project.link}>Acceder au site</a>
           </button>
         ) : (
           <button className="bottom-button">
-            <a href={project.link} className="bottom-button">
-              Accedez au code
-            </a>
+            <a href={project.link}>Accedez au code</a>
           </button>
         )}
       </div>

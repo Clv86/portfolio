@@ -175,7 +175,8 @@ img {
     margin: 0;
   }
   .dropdown-menu {
-    display: flex;
+    display: inline-block;
+    position: relative;
     justify-content: center;
     align-items: center;
   }
@@ -207,7 +208,6 @@ img {
   .dropdown-content {
     position: absolute;
     right: 0;
-    margin: 0 5vw;
     z-index: 10;
     background: #ffffff56;
     backdrop-filter: blur(10px);
