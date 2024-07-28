@@ -95,3 +95,29 @@ textarea {
 [type='submit']:hover {
   background: #f6d300;
 }
+
+@media (max-height: 900px) {
+  textarea {
+    height: 80px;
+  }
+}
+@media (max-height: 700px) {
+  textarea {
+    height: 50px;
+  }
+  .feedback-input {
+    padding: 6px;
+    font-size: 14px;
+  }
+  .input-submit {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .navIcon {
+    margin-top: 0;
+  }
+  .description p {
+    margin: 0;
+  }
+}

@@ -8,7 +8,11 @@
   padding: 100px 20vw;
   color: white;
 }
-
+@media (max-width: 670px) {
+  .about {
+    padding: 100px 10vw;
+  }
+}
 .aboutGrid {
   display: grid;
   gap: 1rem;
@@ -30,6 +34,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
   border-radius: 5px;
   letter-spacing: 2px;
+  font-size: clamp(14px, 1.8dvw, 28px);
 }
 .card ul {
   padding: 0;
@@ -38,7 +43,7 @@
   list-style-type: none;
   text-align: center;
   letter-spacing: 2px;
-  font-size: var(--h4);
+  font-size: clamp(10px, 1.8dvw, 20px);
 }
 .languages {
   grid-area: languages;

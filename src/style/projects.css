@@ -17,13 +17,19 @@
   grid-row-gap: 0;
   grid-column-gap: 1.5em;
   align-items: center;
-  @media (max-width: 1009px) {
+}
+@media (max-width: 1219px) {
+  .projects {
+    padding: 100px 10vw;
+  }
+}
+@media (max-width: 1009px) {
+  .main-section {
     grid-template-areas:
       'aloha alohapi specto'
       'presentation presentation presentation';
     grid-row-gap: 1.5em;
     grid-column-gap: 0.5em;
-    justify-content: center;
   }
 }
 .main-section div {
@@ -50,8 +56,8 @@
   background: none;
   border: none;
   font: inherit;
-  margin: 0;
-  width: 136px;
+  margin: 0 auto;
+  width: clamp(91px, 8vw, 136px);
   height: 45px;
   display: flex;
   align-items: center;
