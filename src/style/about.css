@@ -10,7 +10,7 @@
 }
 @media (max-width: 670px) {
   .about {
-    padding: 100px 10vw;
+    padding: 50px 10vw 100px 10vw;
   }
   .about p {
     margin: 0;
