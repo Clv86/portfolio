@@ -22,14 +22,14 @@ function About() {
             <h3>Languages principaux</h3>
             <ul>
               <li>Javascript/Typescript</li>
-              <li>PHP (Symfony)</li>
+              <li>PHP</li>
             </ul>
           </div>
           <div className="card frontend">
             <h3>Frontend</h3>
             <ul>
-              <li>HTML/CSS</li>
               <li>React</li>
+              <li>Styled Component</li>
               <li>CMS : Wordpress, Wix</li>
             </ul>
           </div>
@@ -38,13 +38,14 @@ function About() {
             <ul>
               <li>Node.js, Express.js</li>
               <li>MongoDB, MySQL</li>
+              <li>Symfony</li>
             </ul>
           </div>
           <div className="card infrastructure">
             <h3>Infrastructure</h3>
             <ul>
-              <li>Git, serveur Debian</li>
-              <li>Jest, React-test-library</li>
+              <li>serveur Debian</li>
+              <li>Git, Jest, React-test-library</li>
               <li>Apache, Nginx, Vercel</li>
             </ul>
           </div>
