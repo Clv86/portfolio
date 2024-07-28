@@ -13,8 +13,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  --aliblue: rgb(0, 74, 173);
-  --alibeige: rgb(228, 226, 221);
+  --aliblue: #004aad;
+  --alibeige: #e4e2dd;
   --h3: clamp(18px, 1.8dvw, 28px);
   --h4: clamp(14px, 1.8dvw, 20px);
   --p: clamp(14px, 1.5dvw, 18px);

@@ -169,6 +169,8 @@ img {
   .hero-content li {
     margin: 0;
   }
+}
+@media (max-height: 700px) {
   .intro-text p {
     font-size: var(--p);
   }

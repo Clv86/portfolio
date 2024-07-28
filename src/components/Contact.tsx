@@ -71,13 +71,13 @@ function Contact() {
           </form>
           <div className="navIcon">
             <a href="https://github.com/Clv86">
-              <img src={github} className="github" />
+              <img src={github} className="github" alt="github-icon" />
             </a>
             <a href="https://www.linkedin.com/in/charles-louis-velieu">
-              <img src={linkedin} />
+              <img src={linkedin} alt="linkedin-icon" />
             </a>
             <a href="mailto:charleslouis.velieu@gmail.com">
-              <img src={mail} />
+              <img src={mail} alt="mail-icon" />
             </a>
           </div>
         </div>

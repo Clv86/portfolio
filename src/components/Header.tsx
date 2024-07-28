@@ -16,13 +16,13 @@ function Header() {
         </div>
         <div className="social">
           <a href="https://github.com/Clv86">
-            <img src={github} className="github" />
+            <img src={github} className="github" alt="github-icon" />
           </a>
           <a href="https://www.linkedin.com/in/charles-louis-velieu">
-            <img src={linkedin} />
+            <img src={linkedin} alt="linkedin-icon" />
           </a>
           <a href="mailto:charleslouis.velieu@gmail.com">
-            <img src={mail} />
+            <img src={mail} alt="mail-icon" />
           </a>
         </div>
       </div>
@@ -39,17 +39,17 @@ function Header() {
           <div className="navbar">
             <ul id="navbar">
               <li>
-                <Link to="about" smooth={true} duration={500}>
+                <Link to="about" smooth={true} duration={500} tabIndex={0}>
                   À propos
                 </Link>
               </li>
               <li>
-                <Link to="projects" smooth={true} duration={500}>
+                <Link to="projects" smooth={true} duration={500} tabIndex={0}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={500}>
+                <Link to="contact" smooth={true} duration={500} tabIndex={0}>
                   Contact
                 </Link>
               </li>
@@ -57,7 +57,7 @@ function Header() {
           </div>
         </div>
         <div className="background-image">
-          <img src={img} />
+          <img src={img} alt="hero-image" />
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1722031858">
