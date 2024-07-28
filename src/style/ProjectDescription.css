@@ -6,6 +6,7 @@
 .bottom-button {
   color: black;
   background: #ffffff56;
+  border: none;
   font: inherit;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
