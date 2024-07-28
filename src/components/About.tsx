@@ -8,10 +8,14 @@ function About() {
       <reactScroll.Element name="about">
         <h2>À propos</h2>
         <p>
-          J'ai fait ce site pour m'exercer au code et montrer les conditions des
-          différents spots susceptibles d'être intéressant sur la côte ouest
-          française ! N'hésitez pas à me contacter pour faire des retours sur le
-          site ou proposer de nouveaux spots à ajouter !
+          Anciennement ingénieur de projets dans l'audiovisuel, je garde de mon
+          parcours précédent un grand intérêt pour l'interculturalité et le
+          travail en équipe.
+          <br />
+          Aujourd'hui je développe mes compétences dans le monde du web à
+          travers des projets en accord avec mes idéaux et passions !
+          Actuellement en quatrième année à Epitech, je suis à la recherche
+          d'une alternance dans le secteur.
         </p>
         <div className="aboutGrid">
           <div className="card languages">

@@ -35,15 +35,6 @@ function Projects() {
           >
             AlohAPI
           </button>
-          {/* <div className="presentation">
-            <h3>Aloha</h3>
-            <p>
-              J'ai fait ce site pour m'exercer au code et montrer les conditions
-              des différents spots susceptibles d'être intéressant sur la côte
-              ouest française ! N'hésitez pas à me contacter pour faire des
-              retours sur le site ou proposer de nouveaux spots à ajouter !
-            </p>
-          </div> */}
           <div className="presentation">
             <ProjectDescription name={project} />
           </div>

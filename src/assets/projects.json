@@ -20,7 +20,7 @@
     },
     {
       "name": "intro",
-      "description": "Cliquez sur les titres de projets à gauche pour avoir plus d'infos à leurs sujets !",
+      "description": "En me formant avec Openclassrooms, j'ai pu réaliser de nombreux projets d'études dans mon apprentissage du frontend avec React, et du backend avec Node.js/Express.js ou PHP Symfony. Au-delà de ces projets d'enseignement, vous trouverez ici mes projets aboutis récents actuellement disponibles.",
       "type": "intro",
       "link": ""
     }
