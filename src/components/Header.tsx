@@ -31,9 +31,8 @@ function Header() {
         <div className="hero-text">
           <div className="intro-text">
             <p>
-              Bienvenue sur mon portfolio ! Vous pourrez en apprendre plus
-              ci-dessous sur mon parcours et les différents projets que j'ai
-              menés.
+              Bienvenue sur mon portfolio ! Vous pourrez en apprendre plus sur
+              mon parcours et les différents projets que j'ai menés.
             </p>
           </div>
           <div className="navbar">
@@ -45,7 +44,7 @@ function Header() {
               </li>
               <li>
                 <Link to="projects" smooth={true} duration={500} tabIndex={0}>
-                  Projects
+                  Projets
                 </Link>
               </li>
               <li>
