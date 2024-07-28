@@ -22,24 +22,30 @@ function ProjectDescription({ name, backToIntro }: ProjectDescriptionProps) {
   }
   return (
     <div className="description-container">
-      <div className="title-line">
+      {project.name === 'intro' ? '' : <h3>{project.name}</h3>}
+      <p>{project.description}</p>
+      <div className="bottom-line">
         {project.name === 'intro' ? (
           ''
         ) : (
-          <button className="back-button" onClick={handleClick}>
+          <button className="bottom-button" onClick={handleClick}>
             Retour
           </button>
         )}
-        {project.name === 'intro' ? '' : <h3>{project.name}</h3>}
+        {project.type === 'intro' ? (
+          ''
+        ) : project.type === 'site' ? (
+          <button className="bottom-button">
+            <a href={project.link}>Accedez au site</a>
+          </button>
+        ) : (
+          <button className="bottom-button">
+            <a href={project.link} className="bottom-button">
+              Accedez au code
+            </a>
+          </button>
+        )}
       </div>
-      <p>{project.description}</p>
-      {project.type === 'intro' ? (
-        ''
-      ) : project.type === 'site' ? (
-        <a href={project.link}>Accedez au site</a>
-      ) : (
-        <a href={project.link}>Accedez au code</a>
-      )}
     </div>
   )
 }
