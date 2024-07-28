@@ -1,0 +1,62 @@
+.aboutGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'languages frontend'
+    'backend infrastructure';
+}
+.card {
+  animation: cardEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
+}
+.card h3 {
+  text-align: center;
+  background: #ffffff56;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 1.8dvw, 28px);
+}
+.card ul {
+  padding: 0;
+}
+.card li {
+  list-style-type: none;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: clamp(10px, 1.8dvw, 20px);
+}
+.languages {
+  grid-area: languages;
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.frontend {
+  grid-area: frontend;
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.backend {
+  grid-area: backend;
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+.infrastructure {
+  grid-area: infrastructure;
+  animation-delay: calc(4 * var(--stagger-delay));
+}
+@media (max-width: 670px) {
+  .card {
+    margin: 0;
+  }
+  .card ul {
+    margin-bottom: 0;
+  }
+  .card h3 {
+    margin-top: 0;
+  }
+  .aboutGrid {
+    margin-top: 14px;
+  }
+}

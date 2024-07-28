@@ -1,0 +1,21 @@
+.navbar {
+  width: fit-content;
+  display: flex;
+  margin-bottom: auto;
+}
+@media (max-width: 601px) {
+  .navbar {
+    display: initial;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  ul#navbar {
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .navbar {
+    display: none;
+  }
+}

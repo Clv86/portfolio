@@ -1,0 +1,126 @@
+.hero {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 400px;
+  padding: 0 5vw 100px 5vw;
+  color: var(--aliblue);
+}
+.hero h1 {
+  margin-bottom: 0;
+}
+.hero h2 {
+  margin-top: 0;
+}
+.title {
+  align-self: flex-start;
+}
+.header-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero h2 {
+  font-weight: 900;
+}
+img {
+  max-width: 50dvw;
+}
+.background-image {
+  width: fit-content;
+}
+.hero-content li {
+  list-style-type: none;
+
+  font-size: var(--h3);
+  font-weight: 900;
+  margin: 1.2em 0;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.hero-content li:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.hero-content ul {
+  align-self: center;
+  padding: 0;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+.intro-text {
+  margin-bottom: auto;
+}
+.intro-text p {
+  font-size: calc(var(--p) + 0.3em);
+}
+
+@media (max-width: 601px) {
+  .title {
+    width: 100%;
+  }
+  .hero {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  .hero-text {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  img {
+    max-width: 100dvw;
+  }
+  .hero-content li {
+    margin: 0;
+  }
+  .small-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  h1 {
+    margin: 0;
+  }
+}
+@media (max-height: 700px) {
+  .intro-text p {
+    font-size: var(--p);
+  }
+}

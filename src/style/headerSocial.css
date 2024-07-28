@@ -1,0 +1,19 @@
+.social {
+  height: 5dvh;
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  width: 148px;
+  align-self: center;
+}
+.social img {
+  height: 5dvh;
+}
+.social .github {
+  height: 4.4dvh;
+}
+@media (max-width: 601px) {
+  .social {
+    display: none;
+  }
+}
