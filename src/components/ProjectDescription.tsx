@@ -8,7 +8,7 @@ function ProjectDescription({ name }: { name: string }) {
     type: string
     link: string
   }
-  const project: Project = projectList.project.find((p) => p.name === name)
+  const project: Project = projectList.project.find((p) => p.name === name)!
   if (!project) {
     return <p>Projet non trouvé</p>
   }
