@@ -12,6 +12,15 @@
   .about {
     padding: 100px 10vw;
   }
+  .about p {
+    margin: 0;
+  }
+  .card {
+    margin: 0;
+  }
+  .card ul {
+    margin-bottom: 0;
+  }
 }
 .aboutGrid {
   display: grid;

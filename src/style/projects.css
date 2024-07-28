@@ -63,14 +63,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* padding: 1em; */
   padding: auto;
   position: relative;
   color: black;
   border-radius: 5px;
   z-index: 1;
   font-size: var(--p);
-  /* font-weight: 600; */
   background: #ffffff56;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);

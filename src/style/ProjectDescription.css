@@ -4,6 +4,7 @@
   font-weight: 500;
 }
 .bottom-button {
+  color: black;
   background: #ffffff56;
   font: inherit;
   backdrop-filter: blur(10px);
