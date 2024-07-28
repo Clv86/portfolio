@@ -1,0 +1,6 @@
+.description-container a {
+  color: var(--aliblue);
+  text-decoration: none;
+  font-size: var(--p);
+  font-weight: 500;
+}

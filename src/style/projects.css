@@ -17,13 +17,13 @@
   grid-row-gap: 0;
   grid-column-gap: 1.5em;
   align-items: center;
-  justify-content: center;
   @media (max-width: 1009px) {
     grid-template-areas:
       'aloha alohapi specto'
       'presentation presentation presentation';
     grid-row-gap: 1.5em;
     grid-column-gap: 0.5em;
+    justify-content: center;
   }
 }
 .main-section div {
@@ -55,14 +55,21 @@
   height: 45px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 1em;
+  /* padding: 1em; */
+  padding: auto;
   position: relative;
   color: black;
   border-radius: 5px;
   z-index: 1;
+  font-size: var(--p);
+  /* font-weight: 600; */
+  background: #ffffff56;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
 }
-.project-name::before,
+/* .project-name::before,
 .project-name::after {
   content: '';
   position: absolute;
@@ -78,17 +85,13 @@
 .project-name::after {
   left: -10%;
   height: 120%;
-  background: #ffffff56;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
 }
 .project-name:active::before {
   transform: translateX(-2.5%);
 }
 .project-name:active::after {
   transform: translateX(15%);
-}
-
+} */
 .custom-shape-divider-bottom-1722035468 {
   position: absolute;
   bottom: 0;

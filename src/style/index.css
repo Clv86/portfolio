@@ -6,6 +6,7 @@ body {
   font-family: 'Lato', sans-serif;
   height: 100%;
   margin: 0;
+  padding: 0;
   color: black;
   background: white;
   position: relative;
@@ -14,34 +15,27 @@ body {
 
   --aliblue: rgb(0, 74, 173);
   --alibeige: rgb(228, 226, 221);
-
-  /*overflow: auto;
-  background: linear-gradient(
-    315deg,
-    rgba(101, 0, 94, 1) 3%,
-    rgba(60, 132, 206, 1) 38%,
-    rgba(48, 238, 226, 1) 68%,
-    rgba(255, 25, 25, 1) 98%
-  );
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-  align-items: center;*/
+  --h3: clamp(18px, 1.8dvw, 28px);
+  --h4: clamp(14px, 1.8dvw, 20px);
+  --p: clamp(14px, 1.5dvw, 18px);
 }
 h1 {
   font-family: 'Chewy', system-ui;
-  font-size: 5.9dvw;
+  font-size: clamp(40px, 5.9dvw, 80px);
   line-height: 1.1;
 }
 h2 {
-  font-size: 2dvw;
+  font-size: clamp(20px, 2.3dvw, 60px);
 }
 h3 {
-  font-size: 2dvw;
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
 }
 p {
   font-family: 'Lato', sans-serif;
-  font-size: clamp(12px, 2vmin, 16);
+  font-size: var(--p);
 }
 .blue {
   background: #004aad;

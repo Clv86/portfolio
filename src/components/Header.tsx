@@ -28,24 +28,33 @@ function Header() {
       </div>
       {/* </div> */}
       <div className="hero-content">
-        <div className="navbar">
-          <ul>
-            <li>
-              <Link to="about" smooth={true} duration={500}>
-                À propos
-              </Link>
-            </li>
-            <li>
-              <Link to="projects" smooth={true} duration={500}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+        <div className="hero-text">
+          <div className="intro-text">
+            <p>
+              Bienvenue sur mon portfolio ! Vous pourrez en apprendre plus
+              ci-dessous sur mon parcours et les différents projets que j'ai
+              menés.
+            </p>
+          </div>
+          <div className="navbar">
+            <ul id="navbar">
+              <li>
+                <Link to="about" smooth={true} duration={500}>
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link to="projects" smooth={true} duration={500}>
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="background-image">
           <img src={img} />
