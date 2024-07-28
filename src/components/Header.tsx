@@ -22,14 +22,12 @@ function Header() {
           <div className="small-title">
             <h1>Charles-Louis Velieu</h1>
             <div className="dropdown-menu">
-              {/* <button className="dropdown-button" onClick={handleOpen}> */}
               <img
                 src={dropdown}
                 alt="dropdown-icon"
                 className="dropdown-icon"
                 onClick={handleOpen}
               />
-              {/* </button> */}
               {open ? (
                 <div className="dropdown-content">
                   <Link

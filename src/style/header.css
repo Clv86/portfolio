@@ -175,7 +175,9 @@ img {
     margin: 0;
   }
   .dropdown-menu {
-    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar {
     display: none;
@@ -219,6 +221,7 @@ img {
     text-decoration: none;
     display: block;
   }
+
   .small-title {
     display: flex;
     justify-content: space-between;
