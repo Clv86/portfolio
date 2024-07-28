@@ -1,7 +1,15 @@
 import projectList from '../assets/projects.json'
 import '../style/ProjectDescription.css'
 
-function ProjectDescription({ name }: { name: string }) {
+interface ProjectDescriptionProps {
+  name: string
+  backToIntro: () => void
+}
+
+function ProjectDescription({ name, backToIntro }: ProjectDescriptionProps) {
+  const handleClick = () => {
+    backToIntro()
+  }
   type Project = {
     name: string
     description: string
@@ -14,7 +22,16 @@ function ProjectDescription({ name }: { name: string }) {
   }
   return (
     <div className="description-container">
-      {project.name === 'intro' ? '' : <h3>{project.name}</h3>}
+      <div className="title-line">
+        {project.name === 'intro' ? (
+          ''
+        ) : (
+          <button className="back-button" onClick={handleClick}>
+            Retour
+          </button>
+        )}
+        {project.name === 'intro' ? '' : <h3>{project.name}</h3>}
+      </div>
       <p>{project.description}</p>
       {project.type === 'intro' ? (
         ''

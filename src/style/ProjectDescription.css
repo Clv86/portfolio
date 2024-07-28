@@ -4,3 +4,21 @@
   font-size: var(--p);
   font-weight: 500;
 }
+.back-button {
+  background: #ffffff56;
+  font: inherit;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+  border-radius: 5px;
+  font-size: calc(var(--p) - 2px);
+  padding: 4px;
+  justify-content: center;
+  cursor: pointer;
+  height: fit-content;
+}
+.title-line {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}

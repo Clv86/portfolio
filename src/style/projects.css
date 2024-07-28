@@ -26,13 +26,13 @@
 @media (max-width: 1009px) {
   .main-section {
     grid-template-areas:
-      'aloha alohapi specto'
-      'presentation presentation presentation';
+      'presentation presentation presentation'
+      'aloha alohapi specto';
     grid-row-gap: 1.5em;
     grid-column-gap: 0.5em;
   }
 }
-.main-section div {
+.main-section .description-container {
   background: #ffffff56;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);

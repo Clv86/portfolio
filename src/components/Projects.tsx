@@ -9,6 +9,10 @@ function Projects() {
   function handleClick(projectTarget: string) {
     setProject(projectTarget)
   }
+
+  const backToIntro = () => {
+    setProject('intro')
+  }
   return (
     <div className="projects white">
       <Element name="projects">
@@ -36,7 +40,7 @@ function Projects() {
             AlohAPI
           </button>
           <div className="presentation">
-            <ProjectDescription name={project} />
+            <ProjectDescription name={project} backToIntro={backToIntro} />
           </div>
         </div>
       </Element>
