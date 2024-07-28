@@ -8,7 +8,7 @@
     },
     {
       "name": "AlohAPI",
-      "description": "AlohAPI est une API météorologique dédiée aux conditions de surf de la côte Ouest française. Cet outil a pour objectif d'automatisé la recherche de data auprès de bases de données externes, et de faciliter sur le long terme le croisement des données.",
+      "description": "AlohAPI est une API météorologique dédiée aux conditions de surf de la côte Ouest française. Cet outil a pour objectif d'automatiser la recherche de data auprès de bases de données externes, et de faciliter sur le long terme le croisement des données.",
       "type": "serveur",
       "link": "https://github.com/Clv86/alohAPI"
     },
@@ -20,7 +20,7 @@
     },
     {
       "name": "intro",
-      "description": "En me formant avec Openclassrooms, j'ai pu réaliser de nombreux projets d'études dans mon apprentissage du frontend avec React, ou du backend avec Node.js/Express.js et PHP Symfony. Au-delà de ces projets d'enseignement, vous trouverez ici mes projets aboutis récents actuellement disponibles.",
+      "description": "Lors de ma formation, j'ai pu réaliser de nombreux projets d'études avec React, Node.js, Express.js ou encore PHP Symfony. Au-delà de ces programmes d'enseignement, vous trouverez ici mes projets personnels récents et actuellement disponibles.",
       "type": "intro",
       "link": ""
     }
