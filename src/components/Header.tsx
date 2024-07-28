@@ -4,14 +4,67 @@ import img from '../assets/webDev3.png'
 import github from '../assets/blueGithub.png'
 import linkedin from '../assets/blueLinkedin.png'
 import mail from '../assets/blueMail.png'
+import { useState } from 'react'
+import dropdown from '../assets/dropdown.svg'
 
 function Header() {
+  const [open, setOpen] = useState<boolean>(false)
+
+  const handleOpen = () => {
+    setOpen(!open)
+  }
+
   return (
     <div className="hero white">
       {/* <div className="header-subtitle"> */}
       <div className="hero-header">
         <div className="title">
-          <h1>Charles-Louis Velieu</h1>
+          <div className="small-title">
+            <h1>Charles-Louis Velieu</h1>
+            <div className="dropdown-menu">
+              {/* <button className="dropdown-button" onClick={handleOpen}> */}
+              <img
+                src={dropdown}
+                alt="dropdown-icon"
+                className="dropdown-icon"
+                onClick={handleOpen}
+              />
+              {/* </button> */}
+              {open ? (
+                <div className="dropdown-content">
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    tabIndex={0}
+                    className="link"
+                  >
+                    À propos
+                  </Link>
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    tabIndex={0}
+                    className="link"
+                  >
+                    Projets
+                  </Link>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    tabIndex={0}
+                    className="link"
+                  >
+                    Contact
+                  </Link>
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
+          </div>
           <h2>Apprenti développeur Full Stack</h2>
         </div>
         <div className="social">
