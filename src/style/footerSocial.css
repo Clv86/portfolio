@@ -12,8 +12,3 @@
 .navIcon .github {
   height: 4.4vh;
 }
-@media (max-height: 700px) {
-  .navIcon {
-    margin-top: 0;
-  }
-}
