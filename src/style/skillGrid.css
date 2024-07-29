@@ -61,7 +61,7 @@
     margin-top: 14px;
   }
 }
-@media (max-height: 600px) {
+@media (max-height: 600px) and (orientation: landscape) {
   .aboutGrid {
     grid-template-areas: 'languages frontend backend infrastructure';
   }
