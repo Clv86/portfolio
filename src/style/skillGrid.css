@@ -6,6 +6,7 @@
     'languages frontend'
     'backend infrastructure';
 }
+
 .card {
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
@@ -58,5 +59,16 @@
   }
   .aboutGrid {
     margin-top: 14px;
+  }
+}
+@media (max-height: 600px) {
+  .aboutGrid {
+    grid-template-areas: 'languages frontend backend infrastructure';
+  }
+  .aboutGrid li {
+    font-size: 12px;
+  }
+  .aboutGrid h3 {
+    font-size: 14px;
   }
 }

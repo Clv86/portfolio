@@ -10,6 +10,9 @@
   gap: 12px;
 }
 @media (max-height: 700px) {
+  .contact {
+    padding: 5vw 5vw 100px 5vw;
+  }
   .description p {
     margin: 0;
   }

@@ -124,3 +124,14 @@ img {
     font-size: var(--p);
   }
 }
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero-text {
+    justify-content: flex-start;
+  }
+  .intro-text {
+    margin: 0;
+  }
+  .intro-text p {
+    margin-bottom: 0;
+  }
+}

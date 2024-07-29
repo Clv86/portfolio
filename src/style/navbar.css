@@ -19,3 +19,8 @@
     display: none;
   }
 }
+@media (orientation: landscape) {
+  ul#navbar li {
+    margin: 0;
+  }
+}

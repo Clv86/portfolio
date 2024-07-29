@@ -24,3 +24,8 @@
   align-items: center;
   gap: 2vw;
 }
+@media (max-height: 600px) {
+  h3 {
+    margin-top: 0;
+  }
+}
