@@ -63,10 +63,10 @@
 }
 @media (max-height: 700px) {
   .aboutGrid li {
-    font-size: 12px;
+    font-size: 10px;
   }
   .aboutGrid .card h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (orientation: landscape) and (max-height: 700px) {
