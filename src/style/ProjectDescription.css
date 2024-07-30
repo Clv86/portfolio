@@ -24,8 +24,11 @@
   align-items: center;
   gap: 2vw;
 }
-@media (max-height: 600px) {
+@media (max-height: 700px) {
   h3 {
     margin-top: 0;
+  }
+  p {
+    font-size: 12px;
   }
 }

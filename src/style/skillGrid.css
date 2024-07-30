@@ -61,14 +61,16 @@
     margin-top: 14px;
   }
 }
-@media (max-height: 600px) and (orientation: landscape) {
-  .aboutGrid {
-    grid-template-areas: 'languages frontend backend infrastructure';
-  }
+@media (max-height: 700px) {
   .aboutGrid li {
     font-size: 12px;
   }
-  .aboutGrid h3 {
+  .aboutGrid .card h3 {
     font-size: 14px;
+  }
+}
+@media (orientation: landscape) and (max-height: 700px) {
+  .aboutGrid {
+    grid-template-areas: 'languages frontend backend infrastructure';
   }
 }

@@ -17,3 +17,8 @@
     margin: 0;
   }
 }
+@media (orientation: landscape) and (max-height: 700px) {
+  .contact h2 {
+    margin-bottom: 0;
+  }
+}

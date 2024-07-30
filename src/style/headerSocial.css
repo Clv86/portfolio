@@ -2,7 +2,7 @@
   height: 5dvh;
   display: flex;
   gap: 8px;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 148px;
   align-self: center;
 }

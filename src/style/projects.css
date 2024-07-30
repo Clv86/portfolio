@@ -78,8 +78,8 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
 }
-@media (max-height: 600px) {
+@media (max-height: 700px) {
   .projects {
-    padding: 5vw;
+    padding: 5vw 5vw 10vw 5vw;
   }
 }
