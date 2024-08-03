@@ -72,6 +72,10 @@ textarea {
   .contact-bloc h2 {
     margin-top: 0;
   }
+  .send-message {
+    padding: 0;
+    font-size: 14px;
+  }
 }
 
 @media (orientation: portrait) and (max-height: 700px) {
