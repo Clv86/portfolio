@@ -8,6 +8,7 @@ function SkillGrid() {
         <ul>
           <li>Javascript/Typescript</li>
           <li>PHP</li>
+          <li>Java</li>
         </ul>
       </div>
       <div className="card frontend">
