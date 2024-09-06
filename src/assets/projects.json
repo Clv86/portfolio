@@ -4,7 +4,7 @@
       "name": "Aloha",
       "description": "En tant qu'utilisateur de sites de prévisions de surf et développeur débutant, j'ai voulu créer un site minimaliste dédié à des spots spécifiques de la côte ouest française, en croisant différentes bases de données météorologiques. Ce projet était parfait pour pratiquer React, utiliser des APIs, et en apprendre plus sur le fonctionnement des prévisions météorologiques.",
       "type": "site",
-      "link": "https://aloha-surf.fr/"
+      "link": "https://alohasurf.fr/"
     },
     {
       "name": "AlohAPI",
