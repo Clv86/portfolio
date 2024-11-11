@@ -13,23 +13,23 @@ function SkillGrid() {
       <div className="card frontend">
         <h3>Frontend</h3>
         <ul>
-          <li>React</li>
+          <li>React, Vue</li>
           <li>Styled Component</li>
-          <li>CMS : Wordpress, Wix</li>
+          <li>CMS : Wordpress</li>
         </ul>
       </div>
       <div className="card backend">
         <h3>Backend</h3>
         <ul>
-          <li>Node.js, Express.js</li>
-          <li>MongoDB, MySQL</li>
-          <li>Symfony</li>
+          <li>Express.js, Nest.js</li>
+          <li>MongoDB, MySQL, Postgresql</li>
+          <li>Phoenix</li>
         </ul>
       </div>
       <div className="card infrastructure">
         <h3>Déploiement, tests</h3>
         <ul>
-          <li>Versioning avec Git</li>
+          <li>Git, Gitlab CI/CD, Docker</li>
           <li>Jest, React-test-library</li>
           <li>Apache, Nginx, Vercel</li>
         </ul>
