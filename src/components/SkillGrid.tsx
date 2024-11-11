@@ -7,7 +7,7 @@ function SkillGrid() {
         <h3>Languages principaux</h3>
         <ul>
           <li>Javascript/Typescript</li>
-          <li>PHP</li>
+          <li>PHP, Elixir</li>
         </ul>
       </div>
       <div className="card frontend">
