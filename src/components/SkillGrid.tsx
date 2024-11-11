@@ -22,7 +22,7 @@ function SkillGrid() {
         <h3>Backend</h3>
         <ul>
           <li>Express.js, Nest.js</li>
-          <li>MongoDB, MySQL, Postgresql</li>
+          <li>MongoDB, MySQL, PostgreSQL</li>
           <li>Phoenix</li>
         </ul>
       </div>
